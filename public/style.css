@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 
+#495867
+#577399
+#BDD5EA
+#F7F7FF
+#FE5F55
+ */
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Istok Web', sans-serif;
+    /* background-color: #53abb5; */
+    background-color: #495867;
+}
+
+.header {
+    /* width: calc(100% - 10px); */
+    width: 100%;
+    border: 0px;
+    padding: 5px 10px;
+    line-height: 25px;
+    font-size: 25px;
+    margin: auto;
+    /* background: -webkit-linear-gradient(left, #008800, #005500); */
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FE5F55;
+}
+
+.header>.appName {
+    font-weight: bold;
+}
+
+.header>.userName {
+    font-size: 15px;
+    align-self: unset;
+    /* align-self: end; */
+    float: right;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left {
+    width: 300px;
+    /* background: -webkit-linear-gradient(-45deg, #eee, #ccc); */
+    border: 2px solid #888;
+    display: flex;
+    background-color: #577399;
+    flex-direction: column;
+}
+
+.page>div {
+    /* background-color: #ddd; */
+    background-color: #F7F7FF;
+    margin: 2px;
+    border-radius: 15px;
+    align-items: stretch;
+}
+
+.followers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+}
+
+.follower {
+    margin-left: -5px;
+    border-radius: 50%;
+    background-color: #333;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid white;
+    color: white;
+}
+
+.page>.content {
+    width: calc(100vw - 350px);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #888;
+    padding-left: 10px;
+}
+
+.left>.projectList {
+    text-align: left;
+    border-top: 1px solid #888;
+    /* border-bottom: 1px solid #888; */
+}
+
+.left .project {
+    margin-left: 10px;
+    font-size: 17px;
+    line-height: 25px;
+    border-bottom: 1px solid #888;
+    margin-bottom: 2px;
+}
+
+.left .status {
+    /* justify-self: end; */
+}
+
+.task-list {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.title {
+    width: 100%;
+    /* height: 50px; */
+    line-height: 50px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title>div {
+    /* border: 1px solid red; */
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.title>.icons {
+    width: 100%;
+    align-self: flex-end;
+    /* width: 200px; */
+}
+
+[icon="plus"] {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #495867;
+    background-color: #FE5F55;
+    /* font-size: 40px; */
+    /* color: #495867; */
+    /* line-height: 50px; */
+}
+
+.task {
+    height: 40px;
+    font-weight: bold;
+    text-align: left;
+    /* width:100%; */
+    padding: 10px;
+    background-color: #BDD5EA;
+    /* border-bottom: 1px solid red; */
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.footer {
+    align-self: flex-end;
+    width: 100vw;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #555;
+    background-color: #333;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
