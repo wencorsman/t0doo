@@ -18,11 +18,11 @@ app.listen(8080);
 // ────────────────────────────────────────────────────────────────────────────────
 
 app.post('/save', (req, res) => {
-    fs.writeFile('./save.json', JSON.stringify(req.body), err => {
+    fs.writeFile('./server/save.json', JSON.stringify(req.body), err => {
         res.send(JSON.stringify({ status: !err }));
     });
 })
 
-app.get('/load', (req, res) => res.sendfile('./save.json'))
+app.get('/load', (req, res) => res.sendfile('./server/save.json'))
 
 // ────────────────────────────────────────────────────────────────────────────────
