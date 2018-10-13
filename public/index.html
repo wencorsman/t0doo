@@ -11,25 +11,35 @@
 </head>
 
 <body>
+
     <div hidden>
-        <div id="task" class="task">task</div>
+        <div class="task">
+            <div icon>icon</div>
+            <div title contenteditable="true">task title</div>
+            <div assign></div>
+        </div>
     </div>
+
     <div class="header">
         <div class="appName">T0doo</div>
         <div class="userName">Max DUde</div>
     </div>
+
     <div class="page">
         <div class="left">
+
             <div class="projectName">
                 <span>Project Name: </span>
                 <span value>asana</span>
             </div>
+
             <div class="projectList">
                 <div class="project">bullshit1</div>
                 <div class="project">bullshit2</div>
                 <div class="project">bullshit3</div>
                 <div class="project">bullshit4</div>
             </div>
+
             <div class="followers">
                 <div class="follower">1</div>
                 <div class="follower">2</div>
@@ -37,27 +47,50 @@
                 <div class="follower">4</div>
                 <div class="follower">5</div>
             </div>
+
             <div class="status">in project</div>
+
         </div>
+
         <div class="content">
             <div class="title">
                 <div class="user">name</div>
+
                 <div class="info">
                     <span>uncomplited:0</span>
                     <span>complited:0</span>
                     <span>all</span>
                 </div>
+
                 <div class="icons">
-                    <div icon="plus"></div>
+                    <div icon="plus" data-button="add();"></div>
+                    <div icon="save" data-button="save();"></div>
+                </div>
+
+            </div>
+            <div sort>
+                <div>
+                    <div data-button="sort(1)">↑</div>
+                    <div data-button="sort(2)">↓</div>
+                </div>
+                <div>
+                    <div data-button="sort(3)">↑</div>
+                    <div data-button="sort(4)">↓</div>
+                </div>
+                <div>
+                    <div data-button="sort(5)">↑</div>
+                    <div data-button="sort(6)">↓</div>
                 </div>
             </div>
-            <div class="task-list">
-                
-            </div>
-            
+
+            <div class="task-list"></div>
+
         </div>
+
     </div>
     <div class="footer">made by me</div>
+
+
     <script src="js/index.js"></script>
 </body>
 
